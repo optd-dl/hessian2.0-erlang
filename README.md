@@ -21,6 +21,7 @@
 
 ###Contact us:
 * [gaoliang@rongcapital.cn](mailto://gaoliang@rongcapital.cn)
+* [jinxin@rongcapital.cn](mailto://jinxin@rongcapital.cn)
 
 ##Hessian 2.0 vs Erlang
 -----------------------
