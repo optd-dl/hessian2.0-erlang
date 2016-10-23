@@ -54,7 +54,7 @@ $ `make`
 ##Run Encode
 ------------
 ***Refer to:***  
-`test/testEncode.erl`
+`test/testEncode.erl`  
 ***e.g. encode object***
 ```erlang
 Class = #class{name="example.testcalss",
