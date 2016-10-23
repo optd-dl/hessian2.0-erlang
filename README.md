@@ -55,6 +55,14 @@ $ `make`
 ------------
 ***Refer to:***  
 `test/testEncode.erl`
+***e.g. encode object***
+```erlang
+Class = #class{name="example.testcalss",
+               fields=["fieldname", "count"]},
+Object = #object{class="example.testcalss",
+                 values=["name", 10]},
+{Bin,_} = hessianEncode:encode({Class,Object},[]).
+```
 
 ##Run Decode
 ------------
