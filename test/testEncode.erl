@@ -11,6 +11,7 @@
 -export([test_all/0]).
 
 test_all() ->
+	test_object(),
 	test_objects_in_list(),
 	test_objects_in_list_2(),
 	test_objects_in_list_3(),
@@ -38,6 +39,23 @@ test_all() ->
 %% ====================================================================
 %% Internal functions
 %% ====================================================================
+
+%---------------------------------------------------------------------------
+% example.testcalss{ 
+% 	string fieldname="name";
+% 	int count=10;
+% }
+%---------------------------------------------------------------------------
+test_object() ->
+	Class = #class{name="example.testcalss",
+				   fields=["fieldname", "count"]},
+	Object = #object{class="example.testcalss",
+					 values=["name", 10]},
+	{Bin,_} = hessianEncode:encode({Class,Object},[]),
+	<<67,17,101,120,97,109,112,108,101,46,116,101,115,116,99,97,108,115,115,146,9,
+	  102,105,101,108,100,110,97,109,101,5,99,111,117,110,116,96,4,110,97,109,101,
+	  154>> = Bin.
+
 %---------------------------------------------------------------------------
 % Test Class, Object, Ref and List
 % 0x72 20 java.util.LinkedList 
