@@ -57,6 +57,12 @@ $ `make`
 `test/testEncode.erl`  
 ***e.g. encode object***
 ```erlang
+%---------------------------------------------------------------------------
+% example.testcalss{ 
+% 	string fieldname="name";
+% 	int count=10;
+% }
+%---------------------------------------------------------------------------
 Class = #class{name="example.testcalss",
                fields=["fieldname", "count"]},
 Object = #object{class="example.testcalss",
