@@ -54,7 +54,7 @@ $ `make`
 ##Run Encode
 ------------
 ***Refer to:***  
-[test/testEncode.erl](https://github.com/optd-dl/hessian2.0-erlang/blob/master/test/testEncode.erl testEncode.erl)  
+[test/testEncode.erl](https://github.com/optd-dl/hessian2.0-erlang/blob/master/test/testEncode.erl "testEncode.erl")  
 ***e.g. encode object***
 ```erlang
 %---------------------------------------------------------------------------
